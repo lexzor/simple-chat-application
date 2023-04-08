@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body { 
+    background-color: rgb(14, 15, 17);
+}
+
+nav {
+    background-color: rgb(23, 24, 29);
+    padding: 10px 0 10px 0;
+}
+
+.navTitle {
+    text-align: center;
+}
+
+#inputName {
+    background-color:rgb(65, 65, 65);
+    border: 2px solid rgb(94, 94, 94);
+    padding: 10px 6px;
+    border-radius: 10px;
+}
+
+#connectBtn {
+    color: white;
+    background-color: green;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out all;
+}
+
+#connectBtn:hover {
+    cursor: pointer;
+    background-color: rgb(0, 175, 0);
+}
+
+#dataContainer {
+    position: absolute;
+    width: 200px;
+    right: calc(50% - 106px);
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#inputName:focus {
+    outline: none;
+    border-color: rgb(92, 123, 143);
+    background-color: rgb(53, 60, 71);
+}
+
+#inputName::placeholder {
+    color: rgb(194, 193, 193);
+}
+
+#chatContainer {
+    width: 800px;
+    height: 300px;
+    position: absolute;
+    background-color: rgb(31, 41, 46);
+    top: 350px;
+    left: calc(50% - 420px);
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 20px rgba(66, 66, 66, 0.212);
+    border: 1px solid rgb(88, 88, 88);
+    overflow-y: auto;
+}
+
+#messageContainer {
+    position: absolute;
+    background-color: rgb(31, 41, 46);
+    top: 700px;
+    left: calc(50% - 420px);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(88, 88, 88);
+    width: 800px;
+    display: flex;
+}
+
+#messageContainer:focus {
+    outline: none;
+}
+
+#textarea {
+    background: none;
+    border: none;
+}
+
+#textarea:focus {
+    outline: none;
+}
+
+#sendMsgBtn {
+    width: 100px;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    margin-left: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px
+}
+
+#sendMsgBtn:hover {
+    background-color: rgba(255, 255, 255, 0.014);
+    cursor: pointer;
+}
+
+.chatMessage {
+    display: flex;
+}
+
+.msgDate {
+    color: gray;
+    font-size: 15px;
+}
+
+.msgUserName {
+    color: rgb(125, 125, 177);
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.msgMessage {
+    margin-left: 5px;
+    font-size: 15px;
+}
+
+.serverMsg {
+    font-size: 15px;
+    color: rgb(192, 115, 115);
+    margin-left: 10px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicatie Chat</title>
+    <!-- Includem fisierul Cascade Style Sheet unde stilizam interfata clientului. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2 class="navTitle">Aplicatie Chat</h2>
+    </nav>
+
+    <!-- Cream un container unde utilizatorul isi scrie numele si poate apasa pe butonul de conectare -->
+    <div id="dataContainer">
+        <input id="inputName" type="text" placeholder="Numele din chat">
+        <button id="connectBtn">Conecteaza-te la chat</button>
+    </div>
+
+    <div id="chatContainer">
+    </div>
+
+    <div id="messageContainer">
+        <textarea id="textarea" name="" id="" cols="100" rows="3"></textarea>
+        <button id="sendMsgBtn">Send</button>
+    </div>
+    <!-- Include fisierul Javascript pentru client in care initiem conexiunea la server. -->
+    <script src="./client.js"></script>
+</body>
+</html>
